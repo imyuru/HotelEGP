@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel EGP</title>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="header">
+            <h1>Bienvenido a la página de reservas del Hotel "EGP"</h1>
+        </div>
+        <div id="body">
+          <div class="contenido">
+                <div>
+                    <p>Desde esta página puede gestionar con total comodidad su reserva.</p>
+                </div>
+                
+                <div>
+                    <table border="1">
+                        <tr>
+                            <th>Tipo de habitación</th>
+                            <th>Nº de personas</th>
+                            <th>Precio/noche</th>
+                        </tr>
+                        <tr>
+
+                            <td>Doble</td>
+                            <td>2</td>
+                            <td>$50</td>
+
+                        </tr>
+                        <tr>
+                            <td>Triple</td>
+                            <td>3</td>
+                            <td>$80</td>
+                        </tr>
+                        <tr>
+                            <td>Suite</td>
+                            <td>2</td>
+                            <td>$130</td>
+
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <div> 
+                    <form >
+                        <fieldset>
+                            <legend>Hotel EGP</legend>
+                            <label>Nombre: *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                            <br>
+                            <label>Apellidos: *</label>
+                            <input type="text" id="apellidos" name="apellidos" required>
+                            <br><br>
+                            <label>E-mail: *</label>
+                            <input type="email" id="correo" name ="correo" placeholder="Tu@email.com" required>
+                            <br><br>
+                            <label>Fecha de entrada: *</label>
+                            <input type="date" id="fecha" name="fecha" required>
+                            <br>
+                            <label>Fecha de salida: *</label>
+                            <input type="date" id="fecha" name="fecha" required>
+                            <br><br>
+                            <label>Tipo de habitación:</label>
+                            <br>
+                            <input type="radio" id="tipo" name="tipo" value="D">Doble
+                            <input type="radio" id="tipo" name="tipo" value="T">Triple
+                            <input type="radio" id="tipo" name="tipo" value="S">Suite
+                            <br><br>
+                            <label>Extras adicionales:</label><br>
+                            <input type="checkbox" id="extras" name="extras" value="1">Incluir desayuno (+$12/día)<br>
+                            <input type="checkbox" id="extras" name="extras" value="2">Parking subterráneo (+$13/día)<br>
+                            <br><br>
+                            <label>Comentarios sobre su reserva</label>
+                            <br><br>
+                            <textarea id="comentario" name="comentario" placeholder="Escriba aquí sus comentarios" cols="50" rows="6"></textarea>
+                            <br><br>
+                            <input type="submit" value="¡Reservar!">
+                            <input type="reset" value="Limpiar formulario">
+                        </fieldset>
+                    </form>
+        
+                </div>
+          </div>    
+        </div>
+    </div>
+    
+    
+</body>
+</html>
